@@ -1,0 +1,236 @@
+.services-section {
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.services-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #333;
+}
+
+.services-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.service-card {
+	background: white;
+	padding: 20px;
+	width: 370px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.service-card img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+
+.service-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.service-description {
+	font-size: 1rem;
+	color: #666;
+}
+
+.contact-section {
+	margin-top: 50px;
+	padding: 40px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.contact-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.contact-button {
+	display: inline-block;
+	background: linear-gradient(to right, #ff7eb3, #ff758c);
+	color: white;
+	padding: 15px 30px;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+
+
+/* SERVICEセクション */
+.service {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	gap: 40px;
+	background: #ffffff;
+	max-width: 1200px;
+}
+
+/* 左側のコンテンツ */
+.service-content {
+	max-width: 50%;
+}
+
+.service-title {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	position: relative;
+	padding-left: 60px;
+}
+
+.service .service-title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 50px;
+	height: 2px;
+	background: #000;
+	transform: translateY(-50%);
+}
+
+.service-description {
+	font-size: 12px;
+	width: 70%;
+	margin: auto;
+	line-height: 1.8;
+	margin-top: 20px;
+}
+
+.service .service-description {
+	font-size: 18px;
+	line-height: 1.8;
+	width: 100%;
+	margin-top: 20px;
+}
+
+
+/* ボタン */
+.service-button {
+	margin-top: 20px;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	background: #FFD700;
+	color: #000;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.service-button:hover {
+	background: #FFC300;
+}
+
+/* 右側の画像と説明 */
+.service-image {
+	position: relative;
+	width: 45%;
+}
+
+.service-image img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.service-info {
+	position: absolute;
+	bottom: -40px;
+	left: -40px;
+	background: rgba(220, 220, 220, 0.8);
+	padding: 15px;
+	border-radius: 10px;
+	width: 80%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-info h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.service-info p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/* --- 📱 モバイル対応 --- */
+@media (max-width: 768px) {
+
+	/* レイアウトを縦並びに */
+	.service {
+		flex-direction: column;
+		gap: 20px;
+		text-align: center;
+		padding: 20px;
+	}
+
+	/* 左側のコンテンツ */
+	.service-content {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.service-title {
+		font-size: 22px;
+		padding-left: 0;
+	}
+
+	.service-title::before {
+		display: none;
+		/* モバイルでは線を削除 */
+	}
+
+	.service .service-description {
+		font-size: 14px;
+		max-width: 100%;
+	}
+
+	/* 右側の画像 */
+	.service-image {
+		max-width: 100%;
+		width: 80%;
+		text-align: right;
+	}
+
+	.service-image img {
+		max-width: 90%;
+	}
+
+	/* 情報ボックス */
+	.service-info {
+		bottom: -20px;
+		left: -25px;
+		font-size: 10px;
+		padding: 10px;
+	}
+	
+	.service-info h3 {
+		font-size: 16px;
+	}
+
+	.service-info p {
+		font-size: 10px;
+		margin-bottom: 0;
+	}
+}
