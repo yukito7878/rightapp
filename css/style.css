@@ -362,7 +362,7 @@ section h3, div h3 {
 .list-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -373,9 +373,8 @@ section h3, div h3 {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    width: 350px;
+    width: 400px;
     text-align: center;
-    margin: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -402,6 +401,7 @@ section h3, div h3 {
     color: inherit;
     display: block;
     padding: 10px;
+	width: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -842,6 +842,10 @@ td {
         flex-direction: column; /* 縦に並べる */
         gap: 10px; /* 間隔を調整 */
     }
+	
+	.list-links li {
+	    margin: auto;
+	}
     
     /* モバイル用レスポンシブスタイル */
 @media (max-width: 768px) {
