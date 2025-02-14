@@ -1072,8 +1072,6 @@ td {
 
 /* お問い合わせ */
 .contact-methods {
-	flex-direction: column;
-	/* 縦に並べる */
 	gap: 20px;
 }
 
