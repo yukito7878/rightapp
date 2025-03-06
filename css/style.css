@@ -715,6 +715,10 @@ div h3 {
 	/* ホバー時の背景色変更 */
 }
 
+.company-table{
+	width: 60%;
+}
+
 .company-section {
 	text-align: center;
 }
@@ -1035,6 +1039,10 @@ td {
 		font-size: 1rem;
 		font-weight: bold;
 		margin-bottom: 0.5rem;
+	}
+	
+	.company-table{
+		width: 90%;
 	}
 
 	.list-links li p {
